@@ -67,12 +67,6 @@
 
 </LinearLayout>
 
-
- // Para el perfil use una imagen como ejemplo de la foto de usuario, aquí dejo el link, recuerden que debe ir en el siguiente orden de carpetas : 
-// APP /res/mipmap
-https://www.google.com/search?q=ususario&sca_esv=00b2415a928ac49a&sca_upv=1&hl=es&authuser=0&sxsrf=ADLYWIIh0UrGm9FNeKOlR4oTYrTN-4hfGQ:1726774336729&source=hp&biw=1600&bih=811&ei=QHzsZrC9Kq7dkPIPjvyeuA4&iflsig=AL9hbdgAAAAAZuyKUCvf48khM1mfnWh5I5RJmWGdb0T0&ved=0ahUKEwiw3cjX38-IAxWuLkQIHQ6-B-cQ4dUDCBA&uact=5&oq=ususario&gs_lp=EgNpbWciCHVzdXNhcmlvMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5I9BdQAFjXFXAFeACQAQCYAbEBoAGjC6oBBDAuMTG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ5gCDKAC0QjCAgQQIxgnwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICBBAAGB6YAwCSBwM0LjigB64r&sclient=img&udm=2#vhid=qHXyNzm6MENSuM&vssid=mosaic
-
-CODIGO XML: 
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -411,4 +405,3 @@ código XML:
         app:srcCompat="@mipmap/uvas1" />
 
 </LinearLayout>
-		
