@@ -1,8 +1,3 @@
-XML
-
-REGISTRO:
-
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -73,7 +68,6 @@ REGISTRO:
 </LinearLayout>
 
 
-PERFIL:
  // Para el perfil use una imagen como ejemplo de la foto de usuario, aquí dejo el link, recuerden que debe ir en el siguiente orden de carpetas : 
 // APP /res/mipmap
 https://www.google.com/search?q=ususario&sca_esv=00b2415a928ac49a&sca_upv=1&hl=es&authuser=0&sxsrf=ADLYWIIh0UrGm9FNeKOlR4oTYrTN-4hfGQ:1726774336729&source=hp&biw=1600&bih=811&ei=QHzsZrC9Kq7dkPIPjvyeuA4&iflsig=AL9hbdgAAAAAZuyKUCvf48khM1mfnWh5I5RJmWGdb0T0&ved=0ahUKEwiw3cjX38-IAxWuLkQIHQ6-B-cQ4dUDCBA&uact=5&oq=ususario&gs_lp=EgNpbWciCHVzdXNhcmlvMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5I9BdQAFjXFXAFeACQAQCYAbEBoAGjC6oBBDAuMTG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ5gCDKAC0QjCAgQQIxgnwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICBBAAGB6YAwCSBwM0LjigB64r&sclient=img&udm=2#vhid=qHXyNzm6MENSuM&vssid=mosaic
@@ -194,11 +188,6 @@ CODIGO XML:
 
 </LinearLayout>
 
-Ademas, hay que tener encuenta que también se deben crear dos archivos "drawble" que van llamados "ic_arrow_down" y "ic_arrow_left"
-IMPORTANTE TENER EN CUENTA EL USO DE MAYUSCULAS  y minúsculas ya que puede generar un error 
-
- en los Drawble se pone el siguiente código:
-
 	En ic_arrow_down:
 		<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
@@ -221,18 +210,6 @@ IMPORTANTE TENER EN CUENTA EL USO DE MAYUSCULAS  y minúsculas ya que puede gene
         android:fillColor="#000000"/>
 </vector>
 
-
-GALERIA: 
-
-Estos son los links de las imágenes utilizadas:
-
-	Almendra:https://www.google.com/search?q=almendra&sca_esv=00b2415a928ac49a&sca_upv=1&rlz=1C1CHZN_esCO1008CO1008&udm=2&biw=1600&bih=811&sxsrf=ADLYWII3-wGGaguQ0M3JlfJ5ea62A5wQuQ%3A1726775766489&ei=1oHsZua2HfeHwbkPmKOR2AU&oq=Almendra&gs_lp=Egxnd3Mtd2l6LXNlcnAiCEFsbWVuZHJhKgIIADIEECMYJzIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESP4iUNsIWNgYcAJ4AJABAJgBiwGgAcUIqgEDMC45uAEDyAEA-AEBmAILoALaCKgCCsICBxAjGCcY6gLCAggQABiABBixA8ICDhAAGIAEGLEDGIMBGIoFmAMEkgcDMi45oAe8Og&sclient=gws-wiz-serp#vhid=MHZJxbCsB3XPaM&vssid=mosaic
-
-	Cacahuate:https://images.app.goo.gl/yd8SwjacZcYazMX88
-	Nuez: https://images.app.goo.gl/WUbc7dSB3tQLmeA56
-	Uvas pasas: https://images.app.goo.gl/a2CLbChfuKWSXosp7
-	Avellana: https://images.app.goo.gl/HUhS5ttWd5XjWiVKA
-	Castaña: https://images.app.goo.gl/Thssn7QDZ5nj23F79
 
 código XML: 
 <?xml version="1.0" encoding="utf-8"?>
