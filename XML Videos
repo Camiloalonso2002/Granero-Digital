@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/light_blue"
+        app:title="VIDEO"
+        app:titleTextColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/almendra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ALMENDRA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cacahuate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CACAHUATE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/playButtonAlmendra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintStart_toStartOf="@+id/almendra"
+        app:layout_constraintTop_toBottomOf="@+id/almendra" />
+
+    <ImageView
+        android:id="@+id/playButtonCacahuate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintEnd_toEndOf="@+id/cacahuate"
+        app:layout_constraintTop_toBottomOf="@+id/cacahuate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/almendraLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="HTTPS://WWW.YOUTUBE.COM/WATCH?V=QMB"
+        android:textSize="14sp"
+        android:textColorLink="@color/pink"
+        android:autoLink="web"
+        app:layout_constraintStart_toStartOf="@+id/playButtonAlmendra"
+        app:layout_constraintTop_toBottomOf="@+id/playButtonAlmendra" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cacahuateLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="HTTPS://WWW.YOUTUBE.COM/WATCH?V=CXWA"
+        android:textSize="14sp"
+        android:textColorLink="@color/pink"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="@+id/playButtonCacahuate"
+        app:layout_constraintTop_toBottomOf="@+id/playButtonCacahuate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nuez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="NUEZ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/almendra"
+        app:layout_constraintTop_toBottomOf="@+id/almendraLink" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uvasPasas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="UVAS PASAS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cacahuate"
+        app:layout_constraintTop_toBottomOf="@+id/cacahuateLink" />
+
+    <ImageView
+        android:id="@+id/playButtonNuez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintStart_toStartOf="@+id/nuez"
+        app:layout_constraintTop_toBottomOf="@+id/nuez" />
+
+    <ImageView
+        android:id="@+id/playButtonUvasPasas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintEnd_toEndOf="@+id/uvasPasas"
+        app:layout_constraintTop_toBottomOf="@+id/uvasPasas" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nuezLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="HTTPS://WWW.YOUTUBE.COM/WATCH?V=LEX"
+        android:textSize="14sp"
+        android:textColorLink="@color/pink"
+        android:autoLink="web"
+        app:layout_constraintStart_toStartOf="@+id/playButtonNuez"
+        app:layout_constraintTop_toBottomOf="@+id/playButtonNuez" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uvasPasasLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="HTTPS://WWW.YOUTUBE.COM/WATCH?V=TI3"
+        android:textSize="14sp"
+        android:textColorLink="@color/pink"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="@+id/playButtonUvasPasas"
+        app:layout_constraintTop_toBottomOf="@+id/playButtonUvasPasas" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/avellanas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AVELLANAS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nuez"
+        app:layout_constraintTop_toBottomOf="@+id/nuezLink" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/castana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CASTANA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/uvasPasas"
+        app:layout_constraintTop_toBottomOf="@+id/uvasPasasLink" />
+
+    <ImageView
+        android:id="@+id/playButtonAvellanas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintStart_toStartOf="@+id/avellanas"
+        app:layout_constraintTop_toBottomOf="@+id/avellanas" />
+
+    <ImageView
+        android:id="@+id/playButtonCastana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintEnd_toEndOf="@+id/castana"
+        app:layout_constraintTop_toBottomOf="@+id/castana" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/avellanasLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="HTTPS://WWW.YOUTUBE.COM/WATCH?V=LEX"
+        android:textSize="14sp"
+        android:textColorLink="@color/pink"
+        android:autoLink="web"
+        app:layout_constraintStart_toStartOf="@+id/playButtonAvellanas"
+        app:layout_constraintTop_toBottomOf="@+id/playButtonAvellanas" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/castanaLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="HTTPS://WWW.YOUTUBE.COM/WATCH?V=LEX"
+        android:textSize="14sp"
+        android:textColorLink="@color/pink"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="@+id/playButtonCastana"
+        app:layout_constraintTop_toBottomOf="@+id/playButtonCastana" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
