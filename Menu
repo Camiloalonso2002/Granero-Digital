@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/light_blue"
+        app:title="TIENDA"
+        app:titleTextColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Productos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/carrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Carrito"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/productos" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/misFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mis Favoritos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/carrito" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/servicioCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Servicio al Cliente"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/misFavoritos" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/misPedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mis Pedidos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/servicioCliente" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/misEnvios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mis Envíos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/misPedidos" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/politicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Políticas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/misEnvios" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nuts"
+        app:layout_constraintBottom_toTopOf="@+id/carrito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productos"
+        app:layout_constraintTop_toTopOf="@+id/productos" />
+
+    <ImageView
+        android:id="@+id/carritoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cart_icon"
+        app:layout_constraintEnd_toEndOf="@+id/imagen"
+        app:layout_constraintStart_toStartOf="@+id/imagen"
+        app:layout_constraintTop_toBottomOf="@+id/imagen" />
+
+    <ImageView
+        android:id="@+id/favoritosIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/heart_icon"
+        app:layout_constraintEnd_toEndOf="@+id/carritoIcon"
+        app:layout_constraintStart_toStartOf="@+id/carritoIcon"
+        app:layout_constraintTop_toBottomOf="@+id/carritoIcon" />
+
+    <TextView
+        android:id="@+id/favoritosCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/favoritosIcon"
+        app:layout_constraintStart_toEndOf="@+id/favoritosIcon"
+        app:layout_constraintTop_toTopOf="@+id/favoritosIcon" />
+
+    <ImageView
+        android:id="@+id/servicioClienteIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/headset_icon"
+        app:layout_constraintEnd_toEndOf="@+id/favoritosIcon"
+        app:layout_constraintStart_toStartOf="@+id/favoritosIcon"
+        app:layout_constraintTop_toBottomOf="@+id/favoritosIcon" />
+
+    <ImageView
+        android:id="@+id/pedidosIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/list_icon"
+        app:layout_constraintEnd_toEndOf="@+id/servicioClienteIcon"
+        app:layout_constraintStart_toStartOf="@+id/servicioClienteIcon"
+        app:layout_constraintTop_toBottomOf="@+id/servicioClienteIcon" />
+
+    <ImageView
+        android:id="@+id/enviosIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/truck_icon"
+        app:layout_constraintEnd_toEndOf="@+id/pedidosIcon"
+        app:layout_constraintStart_toStartOf="@+id/pedidosIcon"
+        app:layout_constraintTop_toBottomOf="@+id/pedidosIcon" />
+
+    <ImageView
+        android:id="@+id/politicasIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/shield_icon"
+        app:layout_constraintEnd_toEndOf="@+id/enviosIcon"
+        app:layout_constraintStart_toStartOf="@+id/enviosIcon"
+        app:layout_constraintTop_toBottomOf="@+id/enviosIcon" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
